@@ -77,7 +77,7 @@ h3 {
   grid-template-rows: repeat(17,1fr);
   background-color: #7c7e88;
   background-image: url("../images/poster-texture.png");
-  box-shadow: 2px 8px 25px grey;
+  box-shadow: 2px 6px 20px grey;
 }
 /* POSTER STRUCTURES */
 .title {
