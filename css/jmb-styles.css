@@ -30,7 +30,7 @@ _______________________________________*/
 }
 html {
   font-size: 20px;
-  background-color: #d5d5d5;
+  background-color: #dedede;
   font-family: ak-medium, helvetica, sans-serif;
   box-sizing: border-box;
 }
@@ -43,51 +43,57 @@ p {
   font-kerning: auto;
   color: #b11d2b;
 }
-h3 {
-  font-size: 6.5px;
-  line-height: 10px;
-  font-kerning: auto;
-  color: black;
-}
-/* POSTER FRAME */
-.poster {
-  width: 500px;
-  height: 700px;
-  margin: 8vh auto 10vh auto;
-  min-width: 500px;
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(17,1fr);
-  background-color: #7c7e88;
-}
-.title {
-  overflow: hidden;
-  grid-area: 3 / 2 / 7 / 12;
+h1 {
   font-size: 84px;
   line-height: 76px;
   letter-spacing: -4px;
   font-kerning: auto;
   color: #e9ebed;
 }
-.subtitle {
-  overflow: hidden;
-  grid-area: 12 / 2 / 15 / 12;
+h2 {
   font-size: 84px;
   line-height: 76px;
   letter-spacing: -4px;
   padding-top: 24px;
   color: #b11d2b;
+}
+h3 {
+  font-size: 6.5px;
+  line-height: 10px;
+  font-kerning: auto;
+  color: #d3d7db;
+}
+/* POSTER FRAME */
+.poster {
+  width: 500px;
+  height: 700px;
+  margin: 10vh auto 10vh auto;
+  min-width: 500px;
+  /* overflow: hidden;*/
+  /* ^this caused not able to scroll page*/
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(17,1fr);
+  background-color: #7c7e88;
+}
+/* POSTER STRUCTURES */
+.title {
+  /* overflow: hidden; */
+  grid-area: 3 / 2 / 7 / 12;
+}
+.subtitle {
+  /* overflow: hidden; */
+  grid-area: 12 / 2 / 15 / 12;
   z-index: 30;
 }
 .single-line {
-  overflow: hidden;
+  /* overflow: hidden; */
   grid-area: 7 / 2 / 8 / 12;
   padding-top: 20px;
   z-index: 30;
 }
 .col-left, .col-right {
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-top: 10px;
   z-index: 30;
 }
@@ -98,7 +104,7 @@ h3 {
   grid-area: 10 / 5 / 13 / 12;
 }
 .bottom-text {
-  overflow: hidden;
+  /* overflow: hidden; */
   grid-area: 17 / 2 / 18 / 7;
   padding-top: 20px;
 }
@@ -108,16 +114,16 @@ h3 {
 }
 .mask-area {
   overflow: hidden;
+  padding-left: 458px;
   grid-area: 7 / 1 / 16 / 12;
 }
 .mask {
   overflow: hidden;
-  width: 1000px;
-  height: 400px;
+  width: 660px;
+  height: 620px;
   background: #e9ebed;
-  transform: rotate(-39deg);
-  transform-origin: top left
-  z-index: 20;
+  transform: rotate(51deg);
+  transform-origin: top left;
 }
 .stripe1 {
   grid-area: 7 / 1 / 16 / 3;
@@ -135,3 +141,6 @@ h3 {
   grid-area: 7 / 10 / 16 / 12;
   background-color: #d3d7db;
 }
+
+/* ANIMATIONS
+_______________________________________*/
