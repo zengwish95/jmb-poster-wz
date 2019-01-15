@@ -1,0 +1,94 @@
+/* Colors:
+Dark grey: #7c7e88
+Light grey: #d3d7db
+Light: #e9ebed
+Red: #b11d2b
+_______________________________________*/
+/* GLOBAL ELEMENTS */
+@font-face {
+    font-family: 'ak-medium';
+    src: url('../fonts/akzidenzgrotesk-medium-webfont.woff2') format('woff2'),
+         url('../fonts/akzidenzgrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+  /* CSS RESET: */
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {
+  font-size: 20px;
+  background-color: #d5d5d5;
+  font-family: ak-medium, helvetica, sans-serif;
+  /* box-sizing: border-box; */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* POSTER FRAME */
+.poster {
+  width: 500px;
+  height: 700px;
+  margin: 5vh auto 10vh auto;
+  min-width: 500px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(13,1fr);
+  grid-template-rows: repeat(18,1fr);
+  background-color: #7c7e88;
+}
+.title {
+  overflow: hidden;
+  grid-area: 3 / 2 / 7 / 12;
+  font-size: 82px;
+  line-height: 74px;
+  letter-spacing: -4px;
+  font-kerning: auto;
+  color: #e9ebed;
+}
+.subtitle {
+  overflow: hidden;
+  grid-area: 12 / 2 / 15 / 12;
+  font-size: 82px;
+  line-height: 74px;
+  letter-spacing: -4px;
+  font-kerning: auto;
+  color: #b11d2b;
+  z-index: 30;
+}
+.single-line {
+  overflow: hidden;
+  grid-area: 7 / 2 / 8 / 12;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 20px;
+  font-kerning: auto;
+  color: #b11d2b;
+  z-index: 30;
+}
+.block1 {
+  grid-area: 7 / 1 / 16 / 12;
+  background-color: #e9ebed;
+}
+.stripe1 {
+  grid-area: 7 / 1 / 16 / 3;
+  background-color: #d3d7db;
+}
+.stripe2 {
+  grid-area: 7 / 4 / 16 / 6;
+  background-color: #d3d7db;
+}
+.stripe3 {
+  grid-area: 7 / 7 / 16 / 9;
+  background-color: #d3d7db;
+}
+.stripe4 {
+  grid-area: 7 / 10 / 16 / 12;
+  background-color: #d3d7db;
+}
