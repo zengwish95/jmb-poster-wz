@@ -12,6 +12,13 @@ _______________________________________*/
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ak-regular';
+    src: url('../fonts/akzidenzgrotesk-regular-webfont.woff2') format('woff2'),
+         url('../fonts/akzidenzgrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
   /* CSS RESET: */
 	margin: 0;
@@ -25,29 +32,40 @@ html {
   font-size: 20px;
   background-color: #d5d5d5;
   font-family: ak-medium, helvetica, sans-serif;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+p {
+  font-size: 12px;
+  line-height: 12px;
+  font-kerning: auto;
+  color: #b11d2b;
+}
+h3 {
+  font-size: 6.5px;
+  line-height: 10px;
+  font-kerning: auto;
+  color: black;
+}
 /* POSTER FRAME */
 .poster {
   width: 500px;
   height: 700px;
-  margin: 5vh auto 10vh auto;
+  margin: 8vh auto 10vh auto;
   min-width: 500px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(13,1fr);
-  grid-template-rows: repeat(18,1fr);
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(17,1fr);
   background-color: #7c7e88;
 }
 .title {
   overflow: hidden;
   grid-area: 3 / 2 / 7 / 12;
-  font-size: 82px;
-  line-height: 74px;
+  font-size: 84px;
+  line-height: 76px;
   letter-spacing: -4px;
   font-kerning: auto;
   color: #e9ebed;
@@ -55,26 +73,51 @@ html {
 .subtitle {
   overflow: hidden;
   grid-area: 12 / 2 / 15 / 12;
-  font-size: 82px;
-  line-height: 74px;
+  font-size: 84px;
+  line-height: 76px;
   letter-spacing: -4px;
-  font-kerning: auto;
+  padding-top: 24px;
   color: #b11d2b;
   z-index: 30;
 }
 .single-line {
   overflow: hidden;
   grid-area: 7 / 2 / 8 / 12;
-  font-size: 12px;
-  line-height: 12px;
   padding-top: 20px;
-  font-kerning: auto;
-  color: #b11d2b;
   z-index: 30;
+}
+.col-left, .col-right {
+  overflow: hidden;
+  padding-top: 10px;
+  z-index: 30;
+}
+.col-left {
+  grid-area: 10 / 2 / 13 / 5;
+}
+.col-right {
+  grid-area: 10 / 5 / 13 / 12;
+}
+.bottom-text {
+  overflow: hidden;
+  grid-area: 17 / 2 / 18 / 7;
+  padding-top: 20px;
 }
 .block1 {
   grid-area: 7 / 1 / 16 / 12;
   background-color: #e9ebed;
+}
+.mask-area {
+  overflow: hidden;
+  grid-area: 7 / 1 / 16 / 12;
+}
+.mask {
+  overflow: hidden;
+  width: 1000px;
+  height: 400px;
+  background: #e9ebed;
+  transform: rotate(-39deg);
+  transform-origin: top left
+  z-index: 20;
 }
 .stripe1 {
   grid-area: 7 / 1 / 16 / 3;
