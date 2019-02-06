@@ -137,6 +137,7 @@ h3 {
   z-index: 20;
   font-size: 0;
 }
+/* Mask for stripe area: */
 .stripe-area > * {
   display: inline-block;
   width: 41.65px;
